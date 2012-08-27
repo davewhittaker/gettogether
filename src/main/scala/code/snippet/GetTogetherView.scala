@@ -12,11 +12,14 @@ class GetTogetherView(getTogether: GetTogether) extends DispatchSnippet {
   
   override def dispatch = {
     case "title" => title
+    case "description" => description
     case "messages" => messages
     case "events" => events
   }
   
   def title = "* *" #> getTogether.name
+  
+  def description = "* *" #> getTogether.description
   
   def messages = {
     var from = ""
