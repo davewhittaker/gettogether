@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Home</title>
+</head>
+<body class="lift:content_id=main">
+	<div id="main" data-lift="surround?with=default;at=content">
+	  <h2 data-lift="GetTogetherView.title">Get Together Name 
+      <img alt="" id="ajax-loader" style="display: none;""
+          src="/img/ajax-loader.gif"/></h2>
+	  <div class="row">
+	     <div class="span9" id="messages">
+	       <h4>Message Board</h4>
+	       <div data-lift="GetTogetherView.messages">
+	       <form data-lift="form.ajax">
+	         <p>
+	          <label for="mform-from">You Are?</label>
+            <input id="mform-from" type="text"/>
+           </p>
+           <p>
+            <label for="mform-body">Your message here...</label>
+            <textarea id="mform-body"></textarea>
+           </p>
+           <button class="btn" type="submit">Post Message</button>
+         </form>
+	       <ul class="listing" data-lift="comet?type=MessageListing">
+	         <li class="message">
+	           <p><span class="message-from">Somebody</span> says....</p>
+	           <p class="message-body">Message</p>
+	           <hr/>
+	         </li>
+	       </ul>
+         </div>
+	     </div>
+	     <div class="span3" id="events">
+	       <h4>Events</h4>
+	       <div data-lift="GetTogetherView.events">
+	       <form data-lift="form.ajax">
+	         <p>
+	           <label for="eform-title">Title</label>
+	           <input id="eform-title" type="text"/>
+	         </p>
+	         <p>
+	           <label for="eform-date">Date (mm/dd/yyyy)</label>
+	           <input id="eform-date"type="text"/>
+	         </p>
+	         <div id="eform-beer">Beer? <input type="checkbox" checked/></div>
+	         <div id="eform-pizza">Pizza? <input type="checkbox" checked/></div>
+	         <br/>
+	         <p><button class="btn" type="submit">New Event</button></p>
+	       </form>
+	       <div class="listing" data-lift="comet?type=EventListing">
+	       <div class="event">
+	         <h5 class="event-title">Title</h5>
+	         <p class="event-date">01/01/1970</p>
+	         <div class="event-beer">Beer? <input type="checkbox" disabled="true"/></div>
+	         <div class="event-pizza">Pizza? <input type="checkbox" disabled="true"/></div>
+	       </div>
+	       </div>
+	       </div>
+	     </div>
+	  </div>
+	</div>
+</body>
+</html>

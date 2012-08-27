@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title class="lift:Menu.title">Get Together!</title>
+<link href="/css/bootstrap.css" rel="stylesheet"></link>
+<link href="/css/bootstrap-responsive.css" rel="stylesheet"></link>
+<link href="/css/screen.css" rel="stylesheet"></link>
+<script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/js/jquery.infieldlabel.min.js" type="text/javascript"></script>
+<script src="/js/jquery.form.js" type="text/javascript"></script>
+<script type="text/javascript">
+   $(function(){
+     $("label").inFieldLabels();
+   });
+   
+   function clearForm(form) {
+     form.find(':text').val('').blur();
+     form.find('textarea').val('').blur();
+    }
+     
+</script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+    <a class="brand" href="/index">
+      Get Together!
+    </a>
+    <ul class="nav">
+      <li class="active"><a href="/index">Home</a></li>
+    </ul>
+    </div>
+  </div>
+</div>
+<div class="container" id="main-container">
+  <div id="content"></div>
+</div>
+</body>
+</html>

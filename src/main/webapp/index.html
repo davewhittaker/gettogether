@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Home</title>
+</head>
+<body class="lift:content_id=main">
+	<div id="main" data-lift="surround?with=default;at=content">
+	 <h4>Available get togethers... 
+      <img alt="" id="ajax-loader" style="display: none;""
+          src="/img/ajax-loader.gif"/></h4>
+	 <div id="get-togethers" data-lift="comet?type=GetTogetherListing">
+	   <div class="get-together">
+	     <button type="button" class="close" >×</button>
+	     <h5><a href="/with/ny-scala">NY Scala Get Together!</a></h5>
+	     <p>Come meet the other people in NYC who are smart enough to love Scala!</p>
+	   </div>
+	 </div>
+	 <div id="new-get-together" data-lift="GetTogetherCreator">
+	   <fieldset>
+	     <legend>Create your own</legend>
+	     <form data-lift="form.ajax">
+	       <p>
+	       <label for="gt-name">Name</label>
+	       <input title="Name" type="text" id="gt-name"/>
+	       </p>
+	       <p>
+	       <label for="gt-description">Description</label>
+	       <textarea title="Description" id="gt-description"></textarea>
+	       </p>
+	       <button class="btn" type="submit">Make it happen!</button>
+	     </form>
+	   </fieldset>
+	 </div>
+	</div>
+</body>
+</html>
